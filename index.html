@@ -1,39 +1,78 @@
----
-layout: default
-title: Home
----
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
 
-<div class="home">
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
 
-  <ul class="posts">
-    {% for post in paginator.posts %}
-    <li>
-      <h1 >{{ post.title }}</h1>
-      <span>{{ post.date | date: "%b %-d, %Y" }}</span>
-      {{ post.excerpt }}
-      <div class="continue">
-        <a href="{{ post.url | prepend: site.baseurl }}">&bull;&bull;&bull;</a>
-      </div>
-    </li>
-    {% endfor %}
-  </ul>
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Social-media-presence-blog by sburnet1</title>
+  </head>
 
-  <div class="pagination">
-    {% if paginator.previous_page %}
-      {% if page == 2 %}
-        <a class="page-link" href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">prv</a>
-      {% else %}
-        <a class="page-link" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">prv</a>
-      {% endif %}
-    {% else %}
-      <span class="page-link">prv</span>
-    {% endif %}
+  <body>
+    <a id="forkme_banner" href="https://github.com/sburnet1/Social-Media-Presence-Blog">View on GitHub</a>
+    <div class="shell">
 
-    {% if paginator.next_page %}
-      <a class="page-link" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">nxt</a>
-    {% else %}
-      <span class="page-link">nxt</span>
-    {% endif %}
-  </div>
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Social-media-presence-blog</h1>
+            <h2></h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
 
-</div>
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/sburnet1/Social-Media-Presence-Blog/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/sburnet1/Social-Media-Presence-Blog/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h3>
+<a id="welcome-post-09-23-16" class="anchor" href="#welcome-post-09-23-16" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome Post! 09-23-16</h3>
+
+<h3>
+<a id="blog-entry-10-05-16" class="anchor" href="#blog-entry-10-05-16" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Blog Entry 10-05-16</h3>
+
+<h3>
+<a id="blog-entry-10-19-16" class="anchor" href="#blog-entry-10-19-16" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Blog Entry 10-19-16</h3>
+
+<h3>
+<a id="blog-entry-11-02-16" class="anchor" href="#blog-entry-11-02-16" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Blog Entry 11-02-16</h3>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/sburnet1">sburnet1</a> can be found on <a href="https://github.com/sburnet1/Social-Media-Presence-Blog">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
